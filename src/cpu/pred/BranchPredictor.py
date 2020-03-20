@@ -567,6 +567,28 @@ class MultiperspectivePerceptron8KB(MultiperspectivePerceptron):
     imli_mask4 = 0x4400
     recencypos_mask = 0x100000090
 
+class MultiperspectivePerceptron8KBNoSG(MultiperspectivePerceptron):
+    type = 'MultiperspectivePerceptron8KBNoSG'
+    cxx_class = 'MultiperspectivePerceptron8KBNoSG'
+    cxx_header = 'cpu/pred/multiperspective_perceptron_8KB_noSG.hh'
+    budgetbits = 8192 * 8 + 2048
+    num_local_histories = 48
+    num_filter_entries = 0
+    imli_mask1 = 0x6
+    imli_mask4 = 0x4400
+    recencypos_mask = 0x100000090
+
+class MultiperspectivePerceptron8KBNoNovel(MultiperspectivePerceptron):
+    type = 'MultiperspectivePerceptron8KBNoNovel'
+    cxx_class = 'MultiperspectivePerceptron8KBNoNovel'
+    cxx_header = 'cpu/pred/multiperspective_perceptron_8KB_noNovel.hh'
+    budgetbits = 8192 * 8 + 2048
+    num_local_histories = 48
+    num_filter_entries = 0
+    imli_mask1 = 0x6
+    imli_mask4 = 0x4400
+    recencypos_mask = 0x100000090
+
 class MultiperspectivePerceptron64KB(MultiperspectivePerceptron):
     type = 'MultiperspectivePerceptron64KB'
     cxx_class = 'MultiperspectivePerceptron64KB'
