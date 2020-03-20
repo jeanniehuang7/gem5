@@ -1,0 +1,1 @@
+/usr/eda/CS251A/sparhami/gem5/src/cpu/pred/tage_sc_l_8KB.hh
