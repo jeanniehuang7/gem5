@@ -165,6 +165,14 @@ def addCommonOptions(parser):
     addNoISAOptions(parser)
 
     # system options
+    parser.add_option("--sgoff",
+                      action="store_true", default=False,
+                      help="Turn off SGHISTPATH feature in "
+                      "multiperspective perceptron branch prediction")
+    parser.add_option("--noveloff",
+                      action="store_true", default=False,
+                      help="Turn off novel features in "
+                      "multipersepctive perceptron branch prediction")
     parser.add_option("--list-cpu-types",
                       action="callback", callback=_listCpuTypes,
                       help="List available CPU types")
