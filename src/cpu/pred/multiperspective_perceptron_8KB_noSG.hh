@@ -41,13 +41,13 @@
 #define __CPU_PRED_MULTIPERSPECTIVE_PERCEPTRON_8KB_NOSG_HH__
 
 #include "cpu/pred/multiperspective_perceptron.hh"
-#include "params/MultiperspectivePerceptron8KB.hh"
+#include "params/MultiperspectivePerceptron8KBNoSG.hh"
 
 class MultiperspectivePerceptron8KBNoSG : public MultiperspectivePerceptron {
     void createSpecs() override;
     public:
     MultiperspectivePerceptron8KBNoSG(
-            const MultiperspectivePerceptron8KBParams *p);
+            const MultiperspectivePerceptron8KBNoSGParams *p);
 };
 
 #endif // __CPU_PRED_MULTIPERSPECTIVE_PERCEPTRON_8KB_NOSG_HH__

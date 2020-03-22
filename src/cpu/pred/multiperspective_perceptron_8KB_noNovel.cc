@@ -40,7 +40,7 @@
 #include "cpu/pred/multiperspective_perceptron_8KB_noNovel.hh"
 
 MultiperspectivePerceptron8KBNoNovel::MultiperspectivePerceptron8KBNoNovel(
-        const MultiperspectivePerceptron8KBParams *p)
+        const MultiperspectivePerceptron8KBNoNovelParams *p)
     : MultiperspectivePerceptron(p)
 {
 }
@@ -66,7 +66,7 @@ MultiperspectivePerceptron8KBNoNovel::createSpecs() {
 }
 
     MultiperspectivePerceptron8KBNoNovel*
-MultiperspectivePerceptron8KBParams::create()
+MultiperspectivePerceptron8KBNoNovelParams::create()
 {
     return new MultiperspectivePerceptron8KBNoNovel(this);
 }

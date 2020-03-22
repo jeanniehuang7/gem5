@@ -40,7 +40,7 @@
 #include "cpu/pred/multiperspective_perceptron_8KB_noSG.hh"
 
 MultiperspectivePerceptron8KBNoSG::MultiperspectivePerceptron8KBNoSG(
-        const MultiperspectivePerceptron8KBParams *p)
+        const MultiperspectivePerceptron8KBNoSGParams *p)
     : MultiperspectivePerceptron(p)
 {
 }
@@ -66,7 +66,7 @@ MultiperspectivePerceptron8KBNoSG::createSpecs() {
 }
 
     MultiperspectivePerceptron8KBNoSG*
-MultiperspectivePerceptron8KBParams::create()
+MultiperspectivePerceptron8KBNoSGParams::create()
 {
     return new MultiperspectivePerceptron8KBNoSG(this);
 }
